@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    margin: 0 auto;
+    max-width: 1024px;
+  }
+
+  header{
+    min-height: 550px;
+    background-color:#b0b0b0;
+  }
+
+  .text{
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", Arial, Verdana;
+    margin: 15px 25px;
+    color: white; 
+    font-size: 1.15rem;
+    text-align: center;
+  } 
+
+  .profile-image{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  a {
+    text-decoration: none;
+  color:#C2571A;
+  }
+
+  nav {
+    font-family: "Roboto", Arial, Verdana;
+    font-weight: 400;
+    letter-spacing: .05em;
+    background-color:#b0b0b0;
+    padding: 25px;
+  }
+
+  h1, nav {
+    text-align: center;
+  }
+  
+  nav, .top-nav li {
+    width: 100%;
+  }
+  
+  h1 a, nav a {
+    color: #000;
+  }
+
+  nav {
+    margin-top: 30px;
+  }
+  
+  nav li {
+    padding: 10px 0;
+    margin: 5px auto;
+    background-color: #fff;
+  }
+  
+  .top-nav a {
+    text-transform: uppercase;
+  }
+
+/*portfolio*/
+
+  .portfolio-header {
+    padding: 3em;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-family: "Roboto", Arial, Verdana;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1100px;
+    padding: 10px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .col {
+    margin: 10px;
+    min-height: 250px;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-top: 5px;
+  }
+
+  .images {
+    max-width: 300px;
+  }
+
+  .box-1 {
+    background-color: #093145;
+  }
+  
+  .box-2 {
+    background-color: #3C6478;
+  }
+  
+  .box-3 {
+    background-color: #107896;
+  }
+  
+  .box-4 {
+    background-color: #829356;
+  }
+  
+  .box-5 {
+    background-color: #C2571A;
+  }
+  
+  .box-6 {
+    background-color: #9A2617;
+  }
+
+  .description {
+    font-family: "Roboto", Arial, Verdana;
+    margin: 5px;
+}
+
+  .contact-header {
+  padding: 1.5em;
+  margin: 0px 10px 0px 10px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-family: "Roboto", Arial, Verdana;
+  text-align: center;
+  }
+
+  .contact{
+    font-family: "Roboto", Arial, Verdana;
+    text-align: center;
+    margin: 0px 100px 25px 100px;
+}
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding: 0 20px;
+    height: 100px;
+    background-color:#b0b0b0;
+    font-family: "Roboto", Arial, Verdana;
+    font-weight:bold;
+    text-transform: uppercase;
+  }
+
+  .full {
+    display: none;
+  }
+
+/* Media Queries */
+
+  @media (min-width: 768px) {
+    .top-nav {
+      margin-top: 0;
+    }
+  
+    header{
+      min-height: 400px;
+      background-color:#b0b0b0;
+    }
+
+    .top-nav li {
+      display: inline-block;
+      width: auto;
+      margin-right: 15px;
+      background-color: transparent;
+    }
+  
+    .top-nav li:last-child {
+      margin-right: 0;
+    }
+  
+    .top-nav a {
+      color: #fff;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .profile-image{
+  display: inline;
+  margin: 0px 50px 25px 50px;
+  float:right;
+  object-fit: contain;
+}
+
+    .text {
+      flex-direction: row-reverse;
+      text-align: left;
+    }
+
+    .profile {
+      text-align: left;
+    }
+
+    .col {
+      flex-basis: calc(33.333% - 20px);
+    }
+
+    .top {
+      display: none;
+    }
+
+    .full {
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+  }
+
+  @media (min-width: 1024px) {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    header{
+      min-height: 400px;
+      background-color:#b0b0b0;
+    }
+
+    .profile-image{
+      display: inline;
+      margin: 0px 50px 25px 50px;
+      float:right;
+      object-fit: contain;
+    }
+
+    .top-nav, 
+    .top-nav li {
+      width: initial;
+      margin-bottom: 0;
+    }
+
+    .col {
+      flex-basis: calc(33.333% - 20px);
+    }
+  }
